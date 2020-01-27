@@ -17,7 +17,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthough GIF
 
-<img src="http://g.recordit.co/qRHOXsL7sr.gif" width=250><br>
+<img src="http://g.recordit.co/fd4clwRtkz.gif" width=250><br>
 
 ### Notes
 Challenge encountered was not getting the correct CollectionView formatting to display my movie's images in the right spot. I had to set the estimate size in collection view on the main storyboard to none in order to fix my solution.
