@@ -135,6 +135,52 @@
             </objects>
             <point key="canvasLocation" x="-175" y="1056"/>
         </scene>
+        <!--Movie Details2 View Controller-->
+        <scene sceneID="UFP-2F-rcC">
+            <objects>
+                <viewController id="We4-xK-HJq" customClass="MovieDetails2ViewController" customModule="Flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wi9-sR-zu4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dq1-85-9hU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h8q-GC-tTG">
+                                <rect key="frame" x="20" y="280" width="148" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxs-ds-f09">
+                                <rect key="frame" x="20" y="492" width="374" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdk-5l-TeT">
+                                <rect key="frame" x="186" y="369" width="208" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yHZ-ad-EnB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SRC-GE-Ybf"/>
+                    <connections>
+                        <outlet property="backdropImage" destination="Dq1-85-9hU" id="9x2-LT-wqn"/>
+                        <outlet property="descripLabel" destination="yxs-ds-f09" id="Qc9-xd-bCq"/>
+                        <outlet property="posterImage" destination="h8q-GC-tTG" id="0ly-nt-ByS"/>
+                        <outlet property="titleLabel" destination="fdk-5l-TeT" id="Z8Z-W9-oSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvA-l9-7fO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011.5942028985507" y="1054.6875"/>
+        </scene>
         <!--Now Playing-->
         <scene sceneID="cAz-Ii-osC">
             <objects>
@@ -190,6 +236,7 @@
                                         <size key="customSize" width="200" height="252"/>
                                         <connections>
                                             <outlet property="posterView" destination="5fD-gu-wad" id="dQ0-71-N59"/>
+                                            <segue destination="We4-xK-HJq" kind="show" id="0l1-2F-pPt"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
